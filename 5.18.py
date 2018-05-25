@@ -37,13 +37,15 @@ def prAge(name):
         print('N/A')
 def test():
     num = int(input())
+    #print num
+    
     for i in range(0, num):
         line= input()
-        tokens= line.strip.split()
-        
-        name= tokens[0]
-        age= int(tokens[1])
-        ages[name]= age
+        #print line
+        tokens= line.split()
+        #print tokens
+
+        ages[tokens[0]]= int(tokens[1])
     print(ages)
     num = int(input())
     for i in range(0, num):
